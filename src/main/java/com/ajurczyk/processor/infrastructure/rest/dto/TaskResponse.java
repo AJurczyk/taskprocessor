@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -18,8 +17,4 @@ public class TaskResponse {
     private Integer position;
     private Integer typos;
 
-    // TODO: 20/12/2022 chyba usunac
-    public TaskResponse(UUID uuid) {
-        this.uuid = uuid;
-    }
 }
